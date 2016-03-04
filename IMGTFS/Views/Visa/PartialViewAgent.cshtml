@@ -1,0 +1,103 @@
+﻿
+@{
+    if (ViewBag.List != null)
+    {
+        <table id="myTableAgentSupport" class="cell-border" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th> Account No </th>
+                        <th>Agent Code </th>
+                        <th> Lastname</th>
+                        <th>firstname</th>
+                        <th>Address1 </th>
+                        <th>Address2</th>
+                        <th>Address3</th>
+                        <th>Address4</th>
+                        <th>Phone1</th>
+                        <th>Phone2</th>
+                        <th>Sex</th>
+                        <th>Birthday</th>
+                        <th>PayrollCD</th>
+                        <th>LASTMEMB</th>
+                        <th>Status</th>
+                        <th>CBCODE</th>
+                        <th>PROFITCNTR</th>
+                        <th>ATM</th>
+                        <th>TAXEXEMPT</th>
+                        <th>CURR_BAL</th>
+                        <th>HOLDAMT</th>
+                        <th>JOINTSTAT</th>
+                        <th>Sector</th>
+                        <th>ACCT_TYPE</th>
+                        <th>Currency</th>
+
+
+                    </tr>
+                </thead>
+                @foreach (var item in ViewBag.list)
+                {
+                    <tr>
+                        <td>@item.Account_No</td>
+                        <td>@item.AgentCode </td>
+                        <td>@item.LastName</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.Addr1</td>
+                        <td>@item.Addr2</td>
+                        <td>@item.Addr3</td>
+                        <td>@item.Addr4</td>
+                        <td>@item.Phone1</td>
+                        <td>@item.Phone2</td>
+                        <td>@item.Sex</td>
+                        <td>@item.Birthday</td>
+                        <td>@item.PayrollCD</td>
+                        <td>@item.LASTMEMB</td>
+                        <td>@item.Status</td>
+                        <td>@item.CBCODE</td>
+                        <td>@item.PROFITCNTR</td>
+                        <td>@item.ATM</td>
+                        <td>@item.TAXEXEMPT</td>
+                        <td>@item.CURR_BAL</td>
+                        <td>@item.HOLDAMT</td>
+                        <td>@item.JOINTSTAT</td>
+                        <td>@item.Sector</td>
+                        <td>@item.ACCT_TYPE</td>
+                        <td>@item.Currency</td>
+
+                    </tr>
+                }
+            </table>
+    }
+    else
+    {
+        <table id="myTableAgentSupport" class="cell-border" cellspacing="0">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Membership Date</th>
+                <th>Applicant Code</th>
+                <th>Applicant Name</th>
+                <th>Country of Origin</th>
+                <th>Commented by</th>
+                <th>Remarks</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>blah</td>
+
+                    <td>blah</td>
+
+                    <td>blah</td>
+
+                    <td>blah</td>
+
+                    <td>blah</td>
+
+                    <td>blah</td>
+
+                    <td>blah</td>
+                </tr>
+</table>
+    }
+
+  }

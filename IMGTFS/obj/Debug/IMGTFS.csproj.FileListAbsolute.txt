@@ -1,0 +1,51 @@
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\IMGTFS.dll.config
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\IMGTFS.dll
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\IMGTFS.pdb
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Helpers.dll
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Mvc.dll
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Razor.dll
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.dll
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.Razor.dll
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Razor.xml
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.xml
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.Razor.xml
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Helpers.xml
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Mvc.xml
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\obj\Debug\IMGTFS.dll
+C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMGTFS\obj\Debug\IMGTFS.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMGTFS.dll.config
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMGTFS.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMGTFS.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\EntityFramework.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\EntityFramework.SqlServer.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMG_BusinessEntities.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMG_BusinessServices.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMG_DataModel.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\Ninject.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\Ninject.Web.Common.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\Ninject.Web.Mvc.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Helpers.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Razor.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.Razor.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\WebActivatorEx.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMG_BusinessEntities.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMG_BusinessServices.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\IMG_DataModel.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\EntityFramework.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\EntityFramework.SqlServer.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\Ninject.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\Ninject.Web.Common.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\Ninject.Web.Mvc.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Razor.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Webpages.Razor.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\bin\System.Web.Helpers.xml
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\obj\Debug\IMGTFS.csprojResolveAssemblyReference.cache
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\obj\Debug\IMGTFS.dll
+C:\Users\mark\Documents\GitHub\TFS\IMGTFS\obj\Debug\IMGTFS.pdb

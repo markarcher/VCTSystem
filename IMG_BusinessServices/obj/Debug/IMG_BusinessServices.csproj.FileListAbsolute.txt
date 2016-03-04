@@ -1,0 +1,9 @@
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\bin\Debug\IMG_BusinessServices.dll
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\bin\Debug\IMG_BusinessServices.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\bin\Debug\IMG_BusinessEntities.dll
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\bin\Debug\IMG_DataModel.dll
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\bin\Debug\IMG_BusinessEntities.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\bin\Debug\IMG_DataModel.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\obj\Debug\IMG_BusinessServices.csprojResolveAssemblyReference.cache
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\obj\Debug\IMG_BusinessServices.dll
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessServices\obj\Debug\IMG_BusinessServices.pdb

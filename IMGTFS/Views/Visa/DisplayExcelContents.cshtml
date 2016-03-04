@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "DisplayExcelContents";
+}
+
+@ViewBag.notNull
+
+<h2 id="textShadowListOfAgents">DisplayExcelContents</h2>
+<body>
+    <div >
+        <table id="myTableFromExcel" class="cell-border" cellspacing="0">
+            <thead>
+                <tr>
+                    <th> Account No </th>
+                    <th>Agent Code </th>
+                    <th>Lastname</th>
+                    <th>Firstname</th>
+                    <th>Middle Name</th>
+                    <th>Address1 </th>
+                    <th>Phone1</th>
+                    <th>Phone2</th>
+                    <th>Sex</th>
+                    <th>Birthday</th>
+                    <th>TITLE_CODE</th>
+                    <th>MotherMaidenName</th>
+                    <th>Birthplace</th>
+                    <th>MaritalStatus</th>
+                    <th>SpouseName</th>
+                    <th>PERMANENT_ADD1</th>
+                    <th>ID_TYPE</th>
+                    <th>ID_NO</th>
+                    <th>TIN</th>
+                    <th>SSS</th>
+                    <th>OccupationDesc</th>
+                    <th>OccupationCode</th>
+                    <th>CurrentEmployer</th>
+                    <th>Nationality</th>
+                    <th>SourceOfFunds</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.list)
+                {
+                    <tr>
+                        <td>@item.Account_No</td>
+                        <td>@item.AgentCode </td>
+                        <td>@item.LastName</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.MiddleName</td>
+                        <td>@item.Addr1 </td>
+                        <td>@item.Phone1</td>
+                        <td>@item.Phone2</td>
+                        <td>@item.Sex</td>
+                        <td>@item.Birthday</td>
+                        <td>@item.TITLE_CODE</td>
+                        <td>@item.MotherMaidenName</td>
+                        <td>@item.Birthplace</td>
+                        <td>@item.MaritalStatus</td>
+                        <td>@item.SpouseName</td>
+                        <td>@item.PERMANENT_ADD1</td>
+                        <td>@item.ID_TYPE</td>
+                        <td>@item.ID_NO</td>
+                        <td>@item.TIN</td>
+                        <td>@item.SSS</td>
+                        <td>@item.OccupationDesc</td>
+                        <td>@item.OccupationCode</td>
+                        <td>@item.CurrentEmployer</td>
+                        <td>@item.Nationality</td>
+                        <td>@item.SourceOfFunds</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="container" id="existinAgentsContainer">
+        <h3 id="textShadowListOfAgents">@ViewBag.ListOfExistingAgents</h3>
+
+        <ul>
+            @foreach (var item in ViewBag.listOfAgentCodes)
+            {
+                <li>@item.AgentCode @item.LastName @item.FirstName @item.MiddleName</li>
+            }
+        </ul>
+    </div> 
+</body>

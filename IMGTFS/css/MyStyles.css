@@ -1,0 +1,250 @@
+﻿
+#myTable{
+    width: 100%;
+    font-size: 0.9em;
+}
+
+div.dataTables_length {
+    float: left;
+    background-color: #608dbd;
+}
+
+ 
+div.dataTables_filter {
+    float: right;
+    margin-bottom: 10px;
+    background-color: #608dbd;
+}
+ 
+div.dataTables_info {
+    float: left;
+    background-color: #bfd1e4;
+    margin-top: 10px;
+}
+ 
+div.dataTables_paginate {
+    float: right;
+    background-color: #bfd1e4;
+    margin-top: 10px;
+}
+
+#myTable thead th{
+     background-color: #8fafd0;
+}
+ 
+#myTableTransmittal thead th{
+     background-color: #8fafd0;
+}
+
+
+#myTableAgentSupport thead th{
+    background-color: #8fafd0;
+}
+
+#myTableVisaApplcatnStsReport thead th{
+      background-color: #8fafd0;
+}
+
+div.dataTables_length,
+div.dataTables_filter,
+div.dataTables_paginate,
+div.dataTables_info {
+    padding: 6px;
+}
+
+/*#search {
+    float: right;
+    padding: 10px;
+    margin-right: 5%;
+}*/
+
+/*#datePickerPosition{
+    float:left;
+    margin-top: 20px;
+    margin-left: 0%;
+    margin-bottom: 30px;
+}*/
+
+
+
+
+
+#headerLinks{
+    margin-right: 10px;
+}
+
+
+.bs-agent{
+    	margin: 20px;
+    }
+
+#accordion{
+     background-color: #b2b2ff;
+}
+
+#accordion .panel-heading{
+    background-color: #4682B4;
+    color: #F8F8FF;
+}
+
+.panel-heading .accordion-toggle:after {
+            
+            font-family: 'Glyphicons Halflings'; 
+            content: "\e114";
+            float: right; 
+            color: #ff0000;
+        }
+
+.panel-heading .accordion-toggle.collapsed:after { 
+    content: "\e080";
+}
+
+
+#accordion .ui-accordion-header{
+  background-image:none;
+  background-color:#333;
+  color:#fff;
+}
+
+
+#homeImage{
+     height: auto;
+    width: 100%;
+}
+
+/*#footer{
+
+        bottom: -50px;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        right: 0;
+       }*/
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: auto; 
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu.pull-left {
+    float: left;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: auto; 
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+.dropdown-submenu > .dropdown-menu { left: auto; right: 100%; }
+
+.dropdown-submenu { position: relative; }
+.dropdown-submenu:hover > a:after { border-right-color: #ffffff; }
+
+#myTableFromExcel{
+    width: 100%;
+    font-size: 0.9em;
+}
+
+#myTableFromExcel thead th{
+     background-color: #8fafd0;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+/*Side Bar Menu*/
+
+ #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+ 
+#wrapper.toggled {
+    padding-left: 250px;
+    overflow: scroll;
+}
+ 
+#sidebar-wrapper {
+    z-index: 1000;
+    position: absolute; 
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+ 
+#page-content-wrapper {
+    position: absolute;
+    padding: 15px;
+    width: 100%;  
+    overflow-x: hidden; 
+}
+.xyz{
+    min-width: 360px;
+}
+#wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0px; 
+}
+.fixed-brand{
+    width: auto;
+}
+
+#homeContainer{
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-top-right-radius: 24px;
+    -moz-border-top-left-radius: 24px;  
+     -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-bottom-right-radius: 24px;
+    -moz-border-bottom-left-radius: 24px;  
+    -moz-box-shadow: 0 0 30px 5px #999;
+    -webkit-box-shadow: 0 0 30px 5px #999;
+}

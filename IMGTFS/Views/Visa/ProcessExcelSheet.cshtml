@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "ProcessExcelSheet";
+}
+
+<h2>ProcessExcelSheet</h2>
+
+@{
+    if (ViewBag.ods == "yes")
+    {
+                 <h1>Cannot Open .ods format files (only .xls and .xlsx)</h1>
+    <a class="btn btn-primary btn-lg" href="@Url.Action("AgentSupport","Visa")" role="button">Cancel</a>
+    }
+    else
+    {
+        <h3>Select sheet name to process:</h3>
+       <form action='@Url.Action("DisplayExcelContents", "Visa")' method='POST'>
+            <p>
+                
+                @foreach (var item in @ViewBag.selection)
+                {
+
+                    <input type="radio" name="RadioButtonSheetSelect" value=@item> @item <br>
+                }
+                <input type="submit" value="Go" class="btn btn-primary btn-lg" />
+            </p>
+        </form>
+    }
+}

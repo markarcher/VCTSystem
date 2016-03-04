@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<body onload="hideHeader();">
+    <div class="container" id="loginContainer">
+        <div id="loginForm">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <form action='@Url.Action("ValidateUser", "Home")' method="post" name="Login_Form" class="form-signin">
+                        <h3 class="form-signin-heading">Welcome Back!</h3>
+                        <hr class="colorgraph"><br>
+
+                        <input type="text" class="form-control" name="Username" id="Username" placeholder="Username" required="" autofocus="" />
+                        <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" required="" />
+
+                        <button class="btn btn-lg btn-primary btn-block" name="Submit" id="loginButton" value="Login" type="Submit">Login</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h5>Please register if you don't have an account yet.</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-offset-5 col-sm-2 text-center">
+
+              
+                <input type=button class="btn btn-default btn-lg btn-block" onclick="showRegisterForm();" value='Register'>
+            </div>
+        </div>
+
+        <div id="showRegistrationForm" style="visibility:hidden">
+            <p>Registration Form</p>
+            <form action='@Url.Action("Register", "Home")' method="post" name="Registration_Form" class="form-inline">
+
+                <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Register</button>
+              
+            </form>
+
+               
+</div>
+        @ViewBag.registered
+    </div>
+
+
+</body>

@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "VisaApplicationStatusReport";
+}
+
+<h2>VisaApplicationStatusReport</h2>
+<body>
+    @*<p>Start Date: @ViewBag.startDate</p>
+        <p>End Date: @ViewBag.endDate</p>*@
+
+    <div class="container" id="backgroundForVisaAppStsRep">
+        <form action='@Url.Action("ReceiveDates", "Investments", new { fund = @ViewBag.fundName })' method='POST'>
+            <div class="row top-buffer">
+                <div class="form-inline">
+                    <div class=" input-daterange" id="datepicker" data-date-format="yyyy-mm-dd">
+                        <div class="col-md-3">
+                            <label>Dates from:</label>
+                            <input type="text" />
+                        </div>
+                        <div class="col-md-3">
+                            <label>To:</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class="col-md-6">
+                    <label for="applicationStatus">Application Status:</label><input type="text" />
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary btn-lg">GENEREATE</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+    <div id="backgroundTableVisaStatRep">
+        <table id="myTableVisaApplcatnStsReport" class="cell-border" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Agent Code</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Application Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>blah</td>
+               
+                    <td>blah</td>
+               
+                    <td>blah</td>
+                
+                    <td>blah</td>
+               
+                    <td>blah</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row top-buffer">
+        <div class="pull-right">
+            <a class="btn btn-primary btn-lg" href="@Url.Action("AgentSupport","Visa")" role="button">Cancel</a>
+        </div>
+    </div>
+   
+</body>

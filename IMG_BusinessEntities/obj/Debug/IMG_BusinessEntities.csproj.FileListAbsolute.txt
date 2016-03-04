@@ -1,0 +1,4 @@
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessEntities\bin\Debug\IMG_BusinessEntities.dll
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessEntities\bin\Debug\IMG_BusinessEntities.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessEntities\obj\Debug\IMG_BusinessEntities.dll
+C:\Users\mark\Documents\GitHub\TFS\IMG_BusinessEntities\obj\Debug\IMG_BusinessEntities.pdb

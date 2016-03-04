@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -Total Financial Solutions</title>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="~/Scripts/jquery-2.2.0.min.js"></script>
+    <link href="~/css/loginCss.css" rel="stylesheet" />
+    <script src="~/js/HomeScript.js"></script>
+   <!--new Theme for navbar-->
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>  
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />    
+    <link href="~/css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/MyStyles.css" rel="stylesheet" type="text/css" />
+ 
+
+    <!--datepicker-->
+    <link href="~/css/datepicker.css" rel="stylesheet" type="text/css">
+   
+
+    <!--dataTables-->
+    <link rel="stylesheet" type="text/css" href="~/Content/DataTables/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/DataTables/css/jquery.dataTables_themeroller.css">
+    <script type="text/javascript" charset="utf8" src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/DataTables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/DataTables/css/buttons.dataTables.min.css" />
+
+    <script src="~/Scripts/DataTables/dataTables.buttons.min.js"></script>
+    <script src="~/Scripts/DataTables/buttons.flash.min.js"></script>
+    <script src="~/js/jszip.min.js"></script>
+    <script src="~/js/pdfmake.min.js"></script>
+    <script src="~/js/vfs_fonts.js"></script>
+    <script src="~/Scripts/DataTables/buttons.html5.min.js"></script>
+    <script src="~/Scripts/DataTables/buttons.print.min.js"></script>
+    <script src="~/Scripts/dataTables.tableTools.js"></script>
+
+    <script type="text/javascript" src="~/js/dataTablesScript.js"></script>
+
+    <link href="~/css/dataTablesStyles.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/visaCssStyles.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/SideMenuStyles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   
+
+    <nav class="navbar navbar-default navbar-inverse img-navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+           
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="homePageLink" class="brand" href="@Url.Action("Home", "Home")">
+                        <img src="~/images/IMG_logo.png" class="img-logo">
+                        <div class="s-m-left img-logo-name">International<br>Marketing<br>Group</div>
+                    </a>
+                </div>
+           
+            <div id="headerLinks">
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="@Url.Action("Home", "Home")"><i class="fa fa-home"></i> Home</a></li>
+                       
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-line-chart"></i> Investments <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                               
+                                <li><a href="@Url.Action("MAA_MUTUAL_LIFE", "Investments")">MAA Mutual Life</a></li>
+                               
+                                <li><a href="@Url.Action("Invest", "Investments", new { investmentType = "FAMI" })">FAMI</a></li>
+
+                                <li><a href="@Url.Action("SOLDIVO", "Investments")">SOLDIVO</a></li>
+                              
+                                <li><a href="@Url.Action("Invest", "Investments", new { investmentType = "PRUDENTIAL_OPTIMA" })">PRUDENTIAL OPTIMA</a></li>
+                               
+                                <li><a href="@Url.Action("Invest", "Investments", new { investmentType = "PAMI" })">PAMI</a></li>
+                              
+                                <li><a href="@Url.Action("Invest", "Investments", new { investmentType = "COCO_LIFE" })">COCO LIFE</a></li>
+
+                                <li><a href="@Url.Action("Invest", "Investments", new { investmentType = "ATR_KIMENG" })">ATR KIMENG</a></li>
+                           
+                                <li class="dropdown-submenu pull-left">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Phil Equity</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">PhilEquity Dividend Yield Fund</a></li>
+                                        <li><a href="#">PhilEquity Dollar Income Fund</a></li>
+                                        <li><a href="#">PhilEquity Fund</a></li>
+                                        <li><a href="#">PhilEquity Money Market Fund</a></li>
+                                        <li><a href="#">PhilEquity Peso Bond Fund</a></li>
+                                        <li><a href="#">PhilEquity PSE Index Fund</a></li>
+                                    </ul>
+                                </li>
+
+                             </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i> Executive Bonus <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="@Url.Action("PolicyMaster", "FinancialSolution")">Executive Policy Master</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="@Url.Action("ExecBonus", "FinancialSolution")">Bonus Pooling</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-text-o"></i> Reports <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                                  
+                                @*<li><a href="@Url.Action("SOLDIVO", "Investments")">SOLDIVO</a></li>*@
+
+                                <li class="dropdown-submenu pull-left">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLDIVO</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="@Url.Action("SoldivoTransmittal", "Investments", new {fund = "SOLDIVO BOND FUND INC" })">Soldivo Bond Fund Inc</a></li>
+                                        <li><a href="@Url.Action("SoldivoTransmittal", "Investments", new {fund = "SOLDIVO STRATEGIC GROWTH FUND INC" })">Soldivo Strategic Growth Fund Inc</a></li>
+
+                                    </ul>   
+                               </li>      
+                                        <li><a href="@Url.Action("Invest", "Investments", new { investmentType = "ATR_KIMENG" })">ATR KIMENG</a></li>
+
+                                        <li class="dropdown-submenu pull-left">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Phil Equity</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="@Url.Action("PhilEquityTransmittal", "Investments", new {fund = "PHILEQUITY DIVIDEND YIELD FUND" })">PhilEquity Dividend Yield Fund</a></li>
+                                                <li><a href="@Url.Action("PhilEquityTransmittal", "Investments", new {fund = "PHILEQUITY DOLLAR INCOME FUND"})">PhilEquity Dollar Income Fund</a></li>
+                                                <li><a href="@Url.Action("PhilEquityTransmittal", "Investments", new {fund = "PHILEQUITY FUND" })">PhilEquity Fund</a></li>
+                                                <li><a href="@Url.Action("PhilEquityTransmittal", "Investments", new {fund = "PHILEQUITY MONEY MARKET FUND" })">PhilEquity Money Market Fund</a></li>
+                                                <li><a href="@Url.Action("PhilEquityTransmittal", "Investments", new {fund = "PHILEQUITY PESO BOND FUND" })">PhilEquity Peso Bond Fund</a></li>
+                                                <li><a href="@Url.Action("PhilEquityTransmittal", "Investments", new {fund = "PHILEQUITY PSE INDEX FUND" })">PhilEquity PSE Index Fund</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                        </li>
+                        <li><a href="@Url.Action("AgentSupport", "Visa")"><i class="fa fa-cc-visa"></i> Visa Tracking </a></li>
+                        <li><a href="@Url.Action("login","FinancialSolution")"><i class="fa fa-sign-out"></i> Logout</a></li>
+                        
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+         </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+    @*<div id="footer">
+        <footer>
+            <p>&copy; @DateTime.Now.Year - IMG Total Financial Solutions</p>
+        </footer>
+    </div>*@
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+   
+
+    <!--Must be placed before bootstrap-datepicker.js -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.input-daterange').datepicker({
+                todayBtn: "linked"
+            });
+        });
+    </script>
+</body>
+</html>
