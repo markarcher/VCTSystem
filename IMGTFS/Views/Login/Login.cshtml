@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<h3>@ViewBag.CustomActionMessage1</h3>
+<body onload="hideHeader();">
+    <div class="container" id="loginContainer">
+        <div id="loginForm">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <form action='@Url.Action("ValidateUser", "Login")' method="post" name="Login_Form" class="form-signin">
+                        <h3 class="form-signin-heading">Welcome Back!</h3>
+                        <hr class="colorgraph"><br>
+
+                        <input type="text" class="form-control" name="Username" id="Username" placeholder="Username" required="" autofocus="" />
+                        <br />
+                        <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" required="" />
+
+                        <button class="btn btn-lg btn-primary btn-block" name="Submit" id="loginButton" value="Login" type="Submit">Login</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h5>Please register if you don't have an account yet.</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-offset-4 col-md-4 text-center">
+
+              
+                <input type=button class="btn btn-default btn-lg btn-block btn btn-success" onclick="showRegisterForm();" value='Register'>
+              
+            </div>
+        </div>
+      
+        <div id="showRegistrationForm" style="display:none">
+            
+            <div class="container" id="partialViewRegistrationForm">
+              
+                        @Html.Partial("PartialViewRegistrationForm")                
+            </div>
+               
+        </div> 
+        <h2 class="text-danger">@TempData["RegistrationComplete"]</h2>
+</div>
+    
+</body>

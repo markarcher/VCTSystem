@@ -2,6 +2,7 @@ C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMG_DataModel\bin\Debug\IMG_DataMo
 C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMG_DataModel\bin\Debug\IMG_DataModel.pdb
 C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMG_DataModel\obj\Debug\IMG_DataModel.dll
 C:\Users\INT'L MARKETING\Documents\GitHub\TFS\IMG_DataModel\obj\Debug\IMG_DataModel.pdb
+C:\Users\mark\Documents\GitHub\TFS\IMG_DataModel\bin\Debug\IMG_DataModel.dll.config
 C:\Users\mark\Documents\GitHub\TFS\IMG_DataModel\bin\Debug\IMG_DataModel.dll
 C:\Users\mark\Documents\GitHub\TFS\IMG_DataModel\bin\Debug\IMG_DataModel.pdb
 C:\Users\mark\Documents\GitHub\TFS\IMG_DataModel\bin\Debug\IMG_BusinessEntities.dll

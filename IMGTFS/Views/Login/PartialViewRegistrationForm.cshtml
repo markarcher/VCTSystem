@@ -1,0 +1,44 @@
+﻿
+
+    <H3>Registration Form</H3>
+    <form action='@Url.Action("Register", "Login")' method="post" name="Registration_Form" class="form-vertical">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-3">
+                    <label>Username</label>
+                    <input type="text" class="form-control" name="username" required>
+                </div>
+                <div class="col-md-3">
+                    <label>Password</label>
+                    <input type="text" class="form-control" name="password" required>
+                </div>
+                <div class="col-md-3">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" name="fullName" required>
+                </div>
+                <div class="col-md-3">
+                   
+                        <label>Department</label><br />
+                        <select class="selectpicker" data-style="btn-primary" name="department" required>
+                            <option selected disabled hidden style='display: none' value=''>Choose an oprion</option>
+                            <option value="agentSupport">AgentSupport</option>
+                            <option value="finance">Finance</option>
+                            <option value="accounting">Accounting</option>
+                            <option value="comptroller">Comptroller</option>
+                        </select>
+                    
+                </div>               
+            </div>
+        </div>
+      
+      <div class="row" id="registerRowButtons">
+          <div class="col-md-6">         
+              <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Register" type="Submit">Submit</button>
+          </div>
+          <div class="col-md-6">
+              <a class="btn btn-lg btn-primary btn-block btn btn-warning" href="@Url.Action("Login","Login")" role="button">Cancel</a>
+          </div>
+      </div> 
+       
+
+    </form>

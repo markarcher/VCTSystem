@@ -12,7 +12,7 @@
 function showRegisterForm() {
 
     var elem = document.getElementById('showRegistrationForm');
-    elem.style.visibility = 'visible';
+    elem.style.display = 'block';
 
     var elemUserName = document.getElementById('Username');
     elemUserName.disabled = true;
@@ -24,3 +24,5 @@ function showRegisterForm() {
     elemLoginButton.disabled = true;
 
 }
+
+   

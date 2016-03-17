@@ -1,0 +1,23 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{ ViewBag.Title = "Oops! Your UnAuthorized"; }
+<h2 style="font:30pt/11pt verdana; color:black" id="ietext">
+    HTTP @Response.StatusCode - @Response.StatusDescription <br>
+</h2>
+
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">You are UnAuthorized!</h2>
+
+
+<div style="min-height: 400px;">
+    <br />
+    <br />
+  
+    <button onclick="Error_goBack()" class="k-button">Go Back</button>
+    <script>
+        function Error_goBack() {
+            window.history.back()
+        }
+    </script>
+
+</div>

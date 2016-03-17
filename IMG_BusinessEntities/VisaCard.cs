@@ -36,6 +36,10 @@ namespace IMG_BusinessEntities
         public string SourceOfFunds { get; set; }
         public string RemitterSenderName { get; set; }
         public string CountryOrigin { get; set; }
+        public string EmailAddress { get; set; }
+        public string CountryOfOrigin { get; set; }
+        public string NatureOfEmployeeBusiness { get; set; }
+        public string RemettersName { get; set; }
              
     }
 }

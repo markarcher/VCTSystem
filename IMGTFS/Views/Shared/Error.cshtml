@@ -1,0 +1,28 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error";
+    Layout = "_Layout.cshtml";
+}
+
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+
+<div style="min-height: 400px;">
+    <h2 class="text-danger">@TempData["RegistrationComplete"]</h2>
+    @Html.ValidationMessage("Error")
+
+    <br />
+    <br />
+
+    <button onclick="Error_goBack()" class="k-button">Go Back</button>
+    <script>
+        function Error_goBack() {
+            window.history.back()
+        }
+    </script>
+
+</div>
+

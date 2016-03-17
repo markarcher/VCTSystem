@@ -65,3 +65,12 @@ $(document).ready(function () {
         
     });
 });
+
+$(document).ready(function () {
+    $('#myTableSearchAgent').DataTable(
+    {
+        dom: 'Blfrtip',
+        buttons: []
+       
+    });
+});

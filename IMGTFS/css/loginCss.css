@@ -12,7 +12,7 @@
   border: 3px dotted rgba(0,0,0,0.1);  
    background-image: url('backgroundImageIMG.jpg');
    background-repeat: no-repeat;
-   background-size: 625px auto;
+   background-size: 660px auto;
    /*background-position-y: -55px;*/
   }
 
@@ -73,3 +73,18 @@ input[type="password"] {
     -moz-box-shadow: 0 0 30px 5px #999;
     -webkit-box-shadow: 0 0 30px 5px #999;
 }
+
+#partialViewRegistrationForm{
+    width: auto;
+     border-radius: 15px 15px;
+    background: #879fa9; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+     -moz-box-shadow: 0 0 30px 5px #999;
+    -webkit-box-shadow: 0 0 30px 5px #999;
+}
+
+#registerRowButtons{
+    margin-bottom: 10px;
+}
+

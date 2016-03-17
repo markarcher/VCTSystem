@@ -6,9 +6,71 @@
 <h2 id="textShadowListOfAgents">Cash Card Application</h2>
 @*<link href="~/css/visaNewMembers.css" rel="stylesheet" type="text/css">*@
 <body>
-    <form action='@Url.Action("CashCardApplication", "Visa")' method='POST' class="form-inline">
+    <div class="container" id="searchAgent">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Search Agent Code</h2>
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg" placeholder="Agent Code" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-info btn-lg" type="button">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
 
-        <div class="container" id="newMemeberContainer">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Search Family Name</h2>
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg" placeholder="Family Name" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-info btn-lg" type="submit" onclick="displayDataTableWithAgents();">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          
+        </div>
+    </div>
+
+    <div class="container" id="searchAgentDataTableContainer" style="display:none">
+        <div class="row">
+            <div class="col-lg-12">
+                @*<div id="partialViewTableAgentSup">*@
+                <table id="myTableSearchAgent" class="cell-border" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Agent code</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Middile Initial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>blah</td>
+                            <td>blah</td>
+                            <td>blah</td>
+                            <td>blah</td>
+                        </tr>
+                </table>
+                   
+                @*</div>*@
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="newMemeberContainer">    
+        <form action='@Url.Action("CashCardApplication", "Visa")' method='POST' class="form-inline">
 
             <div class="row">
                 <div class="col-md-3">
@@ -35,45 +97,57 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6"><label for="phoneNo">Phone No:</label> <input type="text" /></div>
-                <div class="col-md-6"><label for="contactNo">Contact No:</label> <input type="text" /></div>
+                <div class="col-md-6"><label for="phoneNo">Phone No:</label> <input type="text" name="phoneNo" /></div>
+                <div class="col-md-6"><label for="contactNo">Contact No:</label> <input type="text" name="contactNo" /></div>
             </div>
             <div class="row">
-                <div class="col-md-3"><label for="dateOfBirth">Date of Birth:</label> <input type="text" /></div>
-                <div class="col-md-3"><label for="placeOfBirth">Place of Birth:</label> <input type="text" /></div>
-                <div class="col-md-3"><label for="nationality">Nationality:</label> <input type="text" /></div>
-                <div class="col-md-3"><label for="emailAddress">Email Address:</label> <input type="text" /></div>
+                <div class="col-md-6"><label for="dateOfBirth">Date of Birth:</label> <input type="text" name="dateOfBirth" /></div>
+                <div class="col-md-6"><label for="placeOfBirth">Place of Birth:</label> <input type="text" name="placeOfBirth" /></div>
             </div>
             <div class="row">
-                <div class="col-md-6"><label for="presentAddress">Present Address:</label> <input type="text" /></div>
-                <div class="col-md-6"><label for="countryOfOrigin">Country Of origin:</label> <input type="text" /></div>
+                <div class="col-md-6"><label for="nationality">Nationality:</label> <input type="text" name="nationality" /></div>
+                <div class="col-md-6"><label for="emailAddress">Email Address:</label> <input type="text" name="emailAddress" /></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6"><label for="presentAddress">Present Address:</label> <input type="text" name="presentAddress" /></div>
+                <div class="col-md-6"><label for="countryOfOrigin">Country Of origin:</label> <input type="text" name="countryOfOrigin" /></div>
             </div>
             <div class="row">
-                <div class="col-md-6"><label for="permanentAddress">Permanent Address:</label> <input type="text" /></div>
-                <div class="col-md-6"><label for="idNo&amp;idPresented">ID no and ID Presented:</label> <input type="text" /></div>
+                <div class="col-md-4"><label for="permanentAddress">Permanent Address:</label> <input type="text" name="permanentAddress" /></div>
+                <div class="col-md-4"><label for="idPresented">ID Presented:</label> <input type="text" name="idPresented" /></div>
+                <div class="col-md-4"><label for="idNo">ID Number:</label> <input type="text" name="idNo" /></div>
             </div>
             <div class="row">
-                <div class="col-md-6"><label for="nameOfEmployer">Name Of Employer:</label> <input type="text" /></div>
-                <div class="col-md-6"><label for="natureOfWork">Nature of Work:</label> <input type="text" /></div>
+                <div class="col-md-6"><label for="nameOfEmployer">Name Of Employer:</label> <input type="text" name="nameOfEmployer" /></div>
+                <div class="col-md-6"><label for="natureOfWork">Nature of Work:</label> <input type="text" name="natureOfWork" /></div>
             </div>
             <div class="row">
-                <div class="col-md-6"><label for="natureOfEmployeeBusiness">Nature of Employee Business:</label> <input type="text" /></div>
-                <div class="col-md-6"><label for="sourceOfFunds">Source Of Funds:</label> <input type="text" /></div>
+                <div class="col-md-6"><label for="natureOfEmployeeBusiness">Nature of Employee Business:</label> <input type="text" name="natureOfEmployeeBusiness" /></div>
+                <div class="col-md-6"><label for="sourceOfFunds">Source Of Funds:</label> <input type="text" name="sourceOfFunds" /></div>
             </div>
             <div class="row">
-                <div class="col-md-12"><label for="remettersName">Remitter's Name:</label> <input type="text" /></div>
+                <div class="col-md-12"><label for="remettersName">Remitter's Name:</label> <input type="text" name="remettersName" /></div>
             </div>
+
+
+</form>
         </div>
 
-        <div class="row top-buffer">
-            <div class="pull-right">
-                <button type="submit" class="btn btn-primary btn-lg">Save</button>
-                <a class="btn btn-primary btn-lg" href="@Url.Action("AgentSupport","Visa")" role="button">Cancel</a>
-            </div>
+
+    <div class="row top-buffer">
+        <div class="pull-right">
+            <button type="submit" class="btn btn-primary btn-lg">Save</button>
+            <a class="btn btn-primary btn-lg" href="@Url.Action("AgentSupport","Visa")" role="button">Cancel</a>
         </div>
-       
-      
-</form>
-  
+    </div>
+    <script>
+
+        function displayDataTableWithAgents(){
+
+            var elem = document.getElementById('searchAgentDataTableContainer');
+            elem.style.display = 'block';
+        }
+    </script>
 
 </body>

@@ -12,5 +12,9 @@ namespace IMG_DataModel
         List<VisaCard> CheckIfAgentCodeAlreadyExists(List<VisaCard> visaCardList);
 
         int SaveNewMember(VisaCard visaCard);
+
+        int RegisterUser(Users user);
+
+        Users ValidateUser(string userName, string password);
     }
 }

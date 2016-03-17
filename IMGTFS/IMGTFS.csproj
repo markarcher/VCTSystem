@@ -382,16 +382,21 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\VisaController.cs" />
-    <Compile Include="Filters\CustomActionFilter.cs" />
+    <Compile Include="Filters\CustomAuthAttribute.cs" />
+    <Compile Include="Filters\CustomAuthenticationAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
@@ -410,7 +415,12 @@
     <Content Include="Views\Visa\AccountingVerification.cshtml" />
     <Content Include="Views\Visa\CashCardApplication.cshtml" />
     <Content Include="Views\Visa\SaveContentsOfExcelFile.cshtml" />
-    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Login\PartialViewRegistrationForm.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\ErrorPage\Oops.cshtml" />
+    <Content Include="Views\ErrorPage\UnAuthorizedFilter.cshtml" />
+    <Content Include="Views\Visa\Accounting.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

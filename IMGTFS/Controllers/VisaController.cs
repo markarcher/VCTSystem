@@ -10,10 +10,12 @@ using BusinessServices;
 using IMG_BusinessEntities;
 using IMG_DataModel;
 using System.Data.SqlClient;
+using IMGTFS.Filters;
 
 
 namespace IMG_TFS.Controllers
 {
+   
     public class VisaController : Controller
     {
 
@@ -33,6 +35,7 @@ namespace IMG_TFS.Controllers
             return View();
         }
         // GET: /Visa/
+         [CustomAuthAttribute(Department = "agentSupport")]
          [HttpPost]
         public ActionResult ProcessExcelFile(HttpPostedFileBase NAMEbtnUpload)
         {
@@ -77,12 +80,13 @@ namespace IMG_TFS.Controllers
              return RedirectToAction("ProcessExcelSheet", new { ExcelConnString = excelConnectionString });
         }
 
+
          public ActionResult Visa()
          {
              return View();
          }
 
-
+         
          public ActionResult ProcessExcelSheet(string ExcelConnString)
          {
              if (ExcelConnString == "ods") {
@@ -102,23 +106,26 @@ namespace IMG_TFS.Controllers
              return View();
          }
 
-
+         [CustomAuthAttribute(Department = "agentSupport")]
          public ActionResult AgentSupport()
          {
             
              return View();
          }
 
+         [CustomAuthAttribute(Department = "agentSupport")]
          public ActionResult Renewal()
          {
              return View();
          }
+
 
          public ActionResult ApplicationDetails()
          {
              return View();
          }
 
+         [CustomAuthAttribute(Department = "agentSupport")]
          public ActionResult EditDetails()
          {
              return View();
@@ -201,6 +208,7 @@ namespace IMG_TFS.Controllers
          }
 
 
+         [CustomAuthAttribute(Department = "agentSupport")]
          public ActionResult NewMembership()
          {
              return View();
@@ -219,24 +227,68 @@ namespace IMG_TFS.Controllers
              return View();
          }
 
-
+         [CustomAuthAttribute(Department = "agentSupport")]
          public ActionResult CashCardApplication(FormCollection collection)
          {
              int noOfRowsAffected = 0;
              string firstName = collection["firstName"];
              string lastName = collection["lastName"];
              string middleName = collection["middleName"];
+             string phoneNo = collection["phoneNo"];
+             string contactNo = collection["contactNo"];
+             string dateOfBirth = collection["dateOfBirth"];
+             string placeOfBirth = collection["placeOfBirth"];
+             string nationality = collection["nationality"];
+             string emailAddress = collection["emailAddress"];
+             string presentAddress = collection["presentAddress"];
+             string countryOfOrigin = collection["countryOfOrigin"];
+             string permanentAddress = collection["permanentAddress"];
+             string idPresented = collection["idPresented"];
+             string idNo = collection["idNo"];
+             string nameOfEmployer = collection["nameOfEmployer"];
+             string natureOfWork = collection["natureOfWork"];
+             string natureOfEmployeeBusiness = collection["natureOfEmployeeBusiness"];
+             string sourceOfFunds = collection["sourceOfFunds"];
+             string remettersName = collection["remettersName"];
+
              VisaCard visaCard = new VisaCard
              {
+                 
                  LastName = lastName,
                  FirstName = firstName,
-                 MiddleName = middleName
+                 MiddleName = middleName,
+                 Phone1 = phoneNo,
+                 Phone2 = contactNo,
+                 Birthday = dateOfBirth,
+                 Birthplace = placeOfBirth,
+                 Nationality =  nationality,
+                 EmailAddress = emailAddress,
+                 Addr1 = presentAddress,
+                 CountryOfOrigin = countryOfOrigin,
+                 PERMANENT_ADD1 = permanentAddress,
+                 ID_TYPE = idPresented,
+                 ID_NO = idNo,
+                 CurrentEmployer = nameOfEmployer,
+                 OccupationDesc = natureOfWork,
+                 NatureOfEmployeeBusiness = natureOfEmployeeBusiness,
+                 SourceOfFunds = sourceOfFunds,
+                 RemettersName = remettersName
+
              };
-             noOfRowsAffected = _visaCardService.SaveNewMember(visaCard);
+            // noOfRowsAffected = _visaCardService.SaveNewMember(visaCard);
              ViewBag.rowsAffected = noOfRowsAffected;
              ViewBag.lastName = visaCard.FirstName;
              return View();
          }
+
+        //***************Accounting***********************
+
+          [CustomAuthAttribute(Department = "accounting")]
+         public ActionResult Accounting()
+         {
+             return View();
+         }
+
 
          private string FileLocation(string fileExtension)
         {
